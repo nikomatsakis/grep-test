@@ -1,4 +1,4 @@
-#![feature(crate_in_paths, crate_visibility_modifier, extern_in_paths, decl_macro,
+#![feature(crate_in_paths, crate_visibility_modifier, extern_absolute_paths, decl_macro,
            termination_trait, use_nested_groups, universal_impl_trait)]
 #![warn(unreachable_pub)]
 
@@ -6,13 +6,12 @@ mod file_read;
 
 use crate::file_read::for_each_line;
 
-use extern::{
-    regex::Regex,
-    std::{
-        env,
-        process,
-        io::{self, Write}
-    },
+use regex::Regex;
+
+use std::{
+    env,
+    process,
+    io::{self, Write}
 };
 
 fn main() -> io::Result<()> {

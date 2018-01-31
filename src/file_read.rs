@@ -1,4 +1,4 @@
-use extern::std::{fs::File, io::{self, BufRead, BufReader}, path::Path};
+use std::{fs::File, io::{self, BufRead, BufReader}, path::Path};
 
 crate fn for_each_line(
     path: impl AsRef<Path>,
