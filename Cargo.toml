@@ -1,0 +1,8 @@
+[package]
+name = "grep-test"
+version = "0.1.0"
+authors = ["Niko Matsakis <niko@alum.mit.edu>"]
+
+[dependencies]
+failure = "0.1.1"
+regex = "0.2.5"
