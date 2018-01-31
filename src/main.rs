@@ -5,7 +5,14 @@ mod file_read;
 
 use crate::file_read::for_each_line;
 
-use extern::{regex::Regex, std::env, std::io::{self, Write}, std::process};
+use extern::{
+    regex::Regex,
+    std::{
+        env,
+        process,
+        io::{self, Write}
+    },
+};
 
 fn main() -> io::Result<()> {
     let mut args = env::args().skip(1);
