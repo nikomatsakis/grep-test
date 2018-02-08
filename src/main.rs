@@ -4,11 +4,10 @@
 
 mod file_read;
 
-use crate::file_read::for_each_line;
-
-use extern::{
-    regex::Regex,
-    std::{
+use {
+    ::crate::file_read::for_each_line,
+    ::regex::Regex,
+    ::std::{
         env,
         process,
         io::{self, Write}
