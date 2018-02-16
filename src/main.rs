@@ -4,16 +4,12 @@
 
 mod file_read;
 
-use crate::{
-    file_read::for_each_line
-};
+use @::file_read::for_each_line
 
-use extern::{
-    regex::Regex,
-    std::env,
-    std::process,
-    std::io::{self, Write},
-};
+use @regex::Regex;
+use @std::env;
+use @std::process;
+use @std::io::{self, Write};
 
 fn main() -> io::Result<()> {
     let mut args = env::args().skip(1);
