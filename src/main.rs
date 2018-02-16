@@ -4,15 +4,15 @@
 
 mod file_read;
 
-use crate::file_read::for_each_line;
+use crate::{
+    file_read::for_each_line
+};
 
 use extern::{
     regex::Regex,
-    std::{
-        env,
-        process,
-        io::{self, Write}
-    },
+    std::env,
+    std::process,
+    std::io::{self, Write},
 };
 
 fn main() -> io::Result<()> {
